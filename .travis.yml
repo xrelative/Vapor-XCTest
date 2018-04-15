@@ -5,5 +5,5 @@ before_script:
   - swift run Vapor-Server &
 script:
   - xcodebuild test -project Vapor-XCTest.xcodeproj -scheme Vapor-XCTest -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=11.3' ONLY_ACTIVE_ARCH=NO | xcpretty -c
-after_script:
-  - kill $(jobs -p)
+#after_script:
+#  - kill $(jobs -p)
