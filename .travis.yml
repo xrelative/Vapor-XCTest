@@ -1,7 +1,8 @@
-language: objective-c
+language: swift
 osx_image: xcode9.3
 xcode_project: Vapor-XCTest.xcodeproj
 xcode_scheme: Vapor-XCTest
+install: swift package update
 before_script:
 - swift build
 - swift run
