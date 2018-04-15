@@ -5,13 +5,6 @@ import PackageDescription
 
 let package = Package(
     name: "Vapor-Server",
-    products: [
-        // Products define the executables and libraries produced by a package, and make them visible to other packages.
-        .library(
-            name: "Vapor-Server",
-            targets: ["Vapor-Server"]),
-        .executable(name: "Vapor-Server", targets: ["Vapor-Server"])
-    ],
     dependencies: [
         .package(url: "https://github.com/vapor/vapor.git", .upToNextMajor(from: "2.1.0")),
         .package(url: "https://github.com/vapor/fluent-provider.git", .upToNextMajor(from: "1.2.0")),
