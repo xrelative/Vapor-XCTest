@@ -4,6 +4,6 @@ osx_image: xcode9.2
 #  - swift build -Xswiftc -I/usr/local/opt/openssl/include -Xlinker -L/usr/local/opt/openssl/lib
 #  - swift run Vapor-Server &
 script:
-  - xcodebuild -project Vapor-XCTest.xcodeproj -scheme Vapor-XCTest -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
+  - xcodebuild -project Vapor-XCTest.xcodeproj -scheme Vapor-XCTest -sdk iphonesimulator build test
 #after_script:
 #  - kill $(jobs -p)
