@@ -5,4 +5,6 @@ osx_image: xcode9.2
 xcode_project: Vapor-XCTest.xcodeproj
 xcode_scheme: Vapor-XCTest
 before_script:
-  - swift run -Xswiftc -I/usr/local/opt/openssl/include -Xlinker -L/usr/local/opt/openssl/lib Vapor-Server
+  - swift run -Xswiftc -I/usr/local/opt/openssl/include -Xlinker -L/usr/local/opt/openssl/lib Vapor-Server &
+after_script:
+  - kill $(jobs -p)
